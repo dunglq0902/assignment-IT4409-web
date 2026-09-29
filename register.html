@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com; adapted for the IT4409 assignment. -->
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng ký nhận thông tin | Blakletterpress</title>
+  <meta name="description" content="Biểu mẫu đăng ký nhận thông tin Blakletterpress: thông tin tài khoản, thông tin cá nhân và lựa chọn chủ đề quan tâm.">
+  <link rel="canonical" href="http://www.dunglq09.id.vn/register.html">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+  <header class="site-header page-width">
+    <a class="sitename" href="index.html"><img src="images/blakletterpress.png" width="142" height="24" alt="Blakletterpress"></a>
+    <a class="brand-logo" href="index.html"><img src="images/logo.png" width="207" height="108" alt="BLP — Trang chủ"></a>
+    <p class="motto"><img src="images/header-text.png" width="218" height="14" alt="Your online source of trusted news"></p>
+    <form class="search-form" role="search">
+      <label for="search-query" class="sr-only">Tìm kiếm trong website</label>
+      <input id="search-query" name="q" type="search" placeholder="Enter search query" required maxlength="100">
+      <button class="green-button" type="submit">Search</button>
+    </form>
+    <nav class="page-links" aria-label="Các trang bài tập">
+      <a href="index.html">Trang chủ</a>
+      <a href="register.html" aria-current="page">Đăng ký</a>
+      <a href="media.html">Đa phương tiện</a>
+      <a href="index_new.html">HTML5</a>
+    </nav>
+  </header>
+  <div class="layout page-width">
+    <aside class="sidebar" aria-label="Điều hướng và thông tin bổ sung">
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#gioi-thieu">About</a></li>
+          <li><a href="media.html">News</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+        </ul>
+      </nav>
+      <section class="side-box" aria-labelledby="connect-title">
+        <div class="side-box-inner connect">
+          <h2 id="connect-title">Connect with us:</h2>
+          <div class="social-links">
+            <a class="social-icon twitter" href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener noreferrer"></a>
+            <a class="social-icon facebook" href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"></a>
+            <a class="social-icon google" href="https://www.google.com/" aria-label="Google" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+      </section>
+      <section class="side-box" aria-labelledby="posts-title">
+        <div class="side-box-inner">
+          <h2 id="posts-title">Placeholder</h2>
+          <div class="post-preview">
+            <h3>Title Sample One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
+            <a href="media.html">Read more</a>
+          </div>
+          <div class="post-preview">
+            <h3>Title Sample One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
+            <a href="index.html#blog">Read more</a>
+          </div>
+          <a class="green-button view-more" href="media.html">View More</a>
+        </div>
+      </section>
+    </aside>
+    <main id="main-content" class="main-content">
+      <div class="search-results" hidden tabindex="-1" aria-live="polite"></div>
+      <h1>Đăng ký nhận thông tin</h1>
+      <p class="intro">Điền thông tin bên dưới để nhận bản tin định kỳ. Các trường có dấu * là bắt buộc.</p>
+      <form id="registration-form" class="registration" action="register.html" method="post">
+        <fieldset>
+          <legend>Thông tin tài khoản</legend>
+          <div class="form-field">
+            <label for="full-name">Họ và tên *</label>
+            <input id="full-name" name="fullName" type="text" placeholder="Nguyễn Văn A" autocomplete="name" required minlength="2" maxlength="100" pattern=".*\S.*">
+          </div>
+          <div class="form-field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" placeholder="ban@example.com" autocomplete="email" required maxlength="254">
+          </div>
+          <div class="form-field">
+            <label for="password">Mật khẩu * (tối thiểu 8 ký tự)</label>
+            <input id="password" name="password" type="password" autocomplete="new-password" required minlength="8" maxlength="128">
+          </div>
+          <div class="form-field">
+            <label for="phone">Số điện thoại * (10 số, bắt đầu bằng 0)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="numeric" required pattern="0[0-9]{9}" maxlength="10" title="Nhập đúng 10 chữ số, bắt đầu bằng 0.">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Thông tin cá nhân</legend>
+          <div class="form-field">
+            <label for="birthday">Ngày sinh *</label>
+            <input id="birthday" name="birthday" type="date" autocomplete="bday" required>
+          </div>
+          <div class="form-field">
+            <label for="age">Độ tuổi *</label>
+            <input id="age" name="age" type="number" min="0" max="120" step="1" required>
+          </div>
+          <div class="form-field" role="group" aria-labelledby="gender-label">
+            <span class="field-label" id="gender-label">Giới tính *</span>
+            <div class="choice-row">
+              <label><input type="radio" name="gender" value="male" required> Nam</label>
+              <label><input type="radio" name="gender" value="female"> Nữ</label>
+              <label><input type="radio" name="gender" value="other"> Khác</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Tùy chọn nhận tin</legend>
+          <div class="form-field preference-field" role="group" aria-labelledby="topics-label">
+            <span class="field-label" id="topics-label">Chủ đề quan tâm</span>
+            <div class="choice-row">
+              <label><input type="checkbox" name="topics" value="news"> Tin tức</label>
+              <label><input type="checkbox" name="topics" value="blog"> Blog</label>
+              <label><input type="checkbox" name="topics" value="events"> Sự kiện</label>
+            </div>
+          </div>
+          <div class="form-field preference-field">
+            <label for="region">Khu vực</label>
+            <select id="region" name="region">
+              <option value="">-- Chọn khu vực --</option>
+              <option value="north">Miền Bắc</option>
+              <option value="central">Miền Trung</option>
+              <option value="south">Miền Nam</option>
+              <option value="overseas">Nước ngoài</option>
+            </select>
+          </div>
+          <div class="form-field preference-field">
+            <label for="message">Lời nhắn</label>
+            <textarea id="message" name="message" rows="4" maxlength="1000" placeholder="Bạn muốn nhận nội dung gì?"></textarea>
+          </div>
+          <label class="terms-label"><input name="terms" type="checkbox" required> <span>Tôi đồng ý với <a href="index.html#dieu-khoan">điều khoản sử dụng</a> *</span></label>
+        </fieldset>
+        <div class="form-actions">
+          <button id="register-submit" class="green-button" type="submit" disabled>Đăng ký</button>
+          <button class="green-button" type="reset">Nhập lại</button>
+        </div>
+        <p class="form-note">Biểu mẫu minh họa: thông tin chỉ được kiểm tra trên trình duyệt, không được gửi hoặc lưu.</p>
+        <p id="form-status" class="form-status" role="status" tabindex="-1" hidden></p>
+        <noscript><p>Hãy bật JavaScript để kiểm tra và hoàn thành bản đăng ký minh họa.</p></noscript>
+      </form>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="page-width">
+      <ul class="footer-features">
+        <li>
+          <a href="index.html" class="footer-icon home" aria-label="Trang chủ"></a>
+          <p>This website template has been designed by <a href="https://freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
+        </li>
+        <li>
+          <a href="register.html" class="footer-icon bell" aria-label="Đăng ký nhận thông tin"></a>
+          <p>This website template has been designed by <a href="https://freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
+        </li>
+        <li>
+          <a href="media.html" class="footer-icon globe" aria-label="Đa phương tiện"></a>
+          <p>This website template has been designed by <a href="https://freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
+        </li>
+        <li>
+          <a href="index_new.html" class="footer-icon pencil" aria-label="Trang chủ HTML5"></a>
+          <p>This website template has been designed by <a href="https://freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod</p>
+        </li>
+      </ul>
+      <p class="footnote">© Copyright © 2011. Company name all rights reserved · Template by Free Website Templates</p>
+    </div>
+  </footer>
+</body>
+</html>

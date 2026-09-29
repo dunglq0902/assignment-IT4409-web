@@ -1,0 +1,10 @@
+{
+  "name": "assignment-it4409-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Blakletterpress — bài thực hành form, multimedia và semantic HTML5",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

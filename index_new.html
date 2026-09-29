@@ -13,7 +13,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
-  <div class="site-header page-width">
+  <header class="site-header page-width">
     <a class="sitename" href="index.html"><img src="images/blakletterpress.png" width="142" height="24" alt="Blakletterpress"></a>
     <a class="brand-logo" href="index.html"><img src="images/logo.png" width="207" height="108" alt="BLP — Trang chủ"></a>
     <p class="motto"><img src="images/header-text.png" width="218" height="14" alt="Your online source of trusted news"></p>
@@ -22,24 +22,24 @@
       <input id="search-query" name="q" type="search" placeholder="Enter search query" required maxlength="100">
       <button class="green-button" type="submit">Search</button>
     </form>
-    <div class="page-links" aria-label="Các trang bài tập">
+    <nav class="page-links" aria-label="Các trang bài tập">
       <a href="index.html" aria-current="page">Trang chủ</a>
       <a href="register.html">Đăng ký</a>
       <a href="media.html">Đa phương tiện</a>
       <a href="index_new.html">HTML5</a>
-    </div>
-  </div>
+    </nav>
+  </header>
   <div class="layout page-width">
-    <div class="sidebar" aria-label="Điều hướng và thông tin bổ sung">
-      <div class="main-nav" aria-label="Điều hướng chính">
+    <aside class="sidebar" aria-label="Điều hướng và thông tin bổ sung">
+      <nav class="main-nav" aria-label="Điều hướng chính">
         <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="index.html#gioi-thieu">About</a></li>
           <li><a href="media.html">News</a></li>
           <li><a href="index.html#blog">Blog</a></li>
         </ul>
-      </div>
-      <div class="side-box" aria-labelledby="connect-title">
+      </nav>
+      <section class="side-box" aria-labelledby="connect-title">
         <div class="side-box-inner connect">
           <h2 id="connect-title">Connect with us:</h2>
           <div class="social-links">
@@ -48,8 +48,8 @@
             <a class="social-icon google" href="https://www.google.com/" aria-label="Google" target="_blank" rel="noopener noreferrer"></a>
           </div>
         </div>
-      </div>
-      <div class="side-box" aria-labelledby="posts-title">
+      </section>
+      <section class="side-box" aria-labelledby="posts-title">
         <div class="side-box-inner">
           <h2 id="posts-title">Placeholder</h2>
           <div class="post-preview">
@@ -64,47 +64,47 @@
           </div>
           <a class="green-button view-more" href="media.html">View More</a>
         </div>
-      </div>
-    </div>
-    <div id="main-content" class="main-content">
+      </section>
+    </aside>
+    <main id="main-content" class="main-content">
       <div class="search-results" hidden tabindex="-1" aria-live="polite"></div>
-      <div class="home-article">
-        <div>
+      <article class="home-article">
+        <header>
           <h1>Blakletterpress — Kết nối những ý tưởng xanh</h1>
           <p>Tin tức, câu chuyện và những sáng kiến vì một tương lai bền vững.</p>
-        </div>
+        </header>
         <img class="home-hero" src="images/team-large.jpg" width="666" height="344" alt="Nhóm chuyên gia cùng tham gia trao đổi và kết nối">
         <div class="thumbnails" aria-label="Hình ảnh cộng đồng">
           <a href="media.html"><img src="images/smiling.jpg" width="78" height="48" alt="Gặp gỡ thành viên cộng đồng"></a>
           <a href="media.html#hinh-anh"><img src="images/ecofriends.jpg" width="78" height="48" alt="Những người bạn yêu môi trường"></a>
           <a href="media.html"><img src="images/team.jpg" width="78" height="48" alt="Đội ngũ tổ chức sự kiện"></a>
         </div>
-        <div class="home-section" id="gioi-thieu" aria-labelledby="about-title">
+        <section class="home-section" id="gioi-thieu" aria-labelledby="about-title">
           <h2 id="about-title">Chào mừng đến với Blakletterpress</h2>
           <p>Blakletterpress là nơi chia sẻ thông tin về công nghệ, con người và những ý tưởng giúp cuộc sống tốt đẹp hơn. Chúng tôi tin rằng mỗi thay đổi nhỏ đều có thể tạo nên những giá trị lớn cho cộng đồng.</p>
           <p>Khám phá những câu chuyện mới, tìm hiểu các giải pháp phát triển bền vững và kết nối với những người có cùng mối quan tâm.</p>
-        </div>
-        <div class="home-section article-rule" aria-labelledby="event-title">
+        </section>
+        <section class="home-section article-rule" aria-labelledby="event-title">
           <h2 id="event-title">Ngày hội Công nghệ Xanh 2026</h2>
-          <p><span>22/04/2026</span> · Hà Nội</p>
+          <p><time datetime="2026-04-22">22/04/2026</time> · Hà Nội</p>
           <p>Gặp gỡ diễn giả và doanh nghiệp theo đuổi giải pháp công nghệ bền vững. Sự kiện gồm chuỗi tọa đàm, khu trưng bày sản phẩm và các buổi kết nối dành cho sinh viên.</p>
           <a href="media.html">Xem hình ảnh, video và podcast →</a>
-        </div>
-        <div class="home-section article-rule" id="blog" aria-labelledby="blog-title">
+        </section>
+        <section class="home-section article-rule" id="blog" aria-labelledby="blog-title">
           <h2 id="blog-title">Góc chia sẻ</h2>
           <h3>Bắt đầu hành trình xanh từ những việc nhỏ</h3>
           <p>Sử dụng thiết bị tiết kiệm năng lượng, hạn chế đồ nhựa dùng một lần và tái sử dụng những vật dụng quen thuộc là những cách đơn giản để sống xanh mỗi ngày.</p>
           <p>Bạn muốn theo dõi những câu chuyện tiếp theo? <a href="register.html">Đăng ký nhận thông tin</a> và chọn chủ đề mình yêu thích.</p>
-        </div>
-        <div class="home-section article-rule" id="dieu-khoan" aria-labelledby="terms-title">
+        </section>
+        <section class="home-section article-rule" id="dieu-khoan" aria-labelledby="terms-title">
           <h2 id="terms-title">Điều khoản sử dụng</h2>
           <p>Đây là website thực hành môn IT4409. Nội dung sự kiện và bản đăng ký dùng để minh họa. Biểu mẫu chỉ kiểm tra dữ liệu trên trình duyệt, không tạo tài khoản, lưu thông tin cá nhân hoặc gửi bản tin thực tế.</p>
-        </div>
-        <div><p class="media-note">Giao diện được điều chỉnh từ mẫu <a href="https://freewebsitetemplates.com/preview/businessnewswebtemplate/">Blakletterpress của Free Website Templates</a>.</p></div>
-      </div>
-    </div>
+        </section>
+        <footer><p class="media-note">Giao diện được điều chỉnh từ mẫu <a href="https://freewebsitetemplates.com/preview/businessnewswebtemplate/">Blakletterpress của Free Website Templates</a>.</p></footer>
+      </article>
+    </main>
   </div>
-  <div class="site-footer">
+  <footer class="site-footer">
     <div class="page-width">
       <ul class="footer-features">
         <li>
@@ -126,6 +126,6 @@
       </ul>
       <p class="footnote">© Copyright © 2011. Company name all rights reserved · Template by Free Website Templates</p>
     </div>
-  </div>
+  </footer>
 </body>
 </html>

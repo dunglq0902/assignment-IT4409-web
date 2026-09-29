@@ -1,0 +1,136 @@
+/* Layout and image assets adapted from the Blakletterpress template.
+ * Website template by freewebsitetemplates.com.
+ * https://freewebsitetemplates.com/preview/businessnewswebtemplate/
+ */
+@font-face {
+  font-family: "PT Serif Caption";
+  src: url("../fonts/PT_Serif-Caption-Web-Regular.woff") format("woff");
+  font-display: swap;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: #fed58e url("../images/bg-body.png") repeat-x left top; color: #525252; font-family: Georgia, "Times New Roman", serif; font-size: 14px; line-height: 1.7; }
+a { color: #397424; text-underline-offset: 2px; }
+a:hover { color: #7e501c; }
+img { max-width: 100%; height: auto; border: 0; }
+button, input, select, textarea { font: inherit; }
+button, input[type="submit"], input[type="reset"] { cursor: pointer; }
+:focus-visible { outline: 3px solid #286837; outline-offset: 3px; }
+[hidden] { display: none !important; }
+.page-width { width: min(880px, calc(100% - 32px)); margin-inline: auto; }
+.site-header { position: relative; height: 142px; }
+.sitename { position: absolute; left: 2px; top: 32px; width: 132px; }
+.brand-logo { position: absolute; top: 23px; left: 50%; transform: translateX(-50%); width: 188px; }
+.motto { position: absolute; top: 42px; right: 18px; width: 202px; margin: 0; }
+.search-form { position: absolute; top: 77px; right: 18px; display: flex; gap: 6px; }
+.search-form input { width: 156px; height: 23px; border: 1px solid #d4bd93; padding: 2px 5px; font-size: 12px; background: #fffdf8; }
+.search-form input::placeholder { color: #938774; font-style: italic; }
+.green-button { padding: 2px 10px; border: 1px solid #528044; border-radius: 2px; background: linear-gradient(#9df296, #29ab44 45%, #126528); box-shadow: inset 0 1px #e2f4b4; color: #fffaf0; font-weight: bold; line-height: 1.25; text-shadow: 0 1px 2px #325324; }
+.green-button:hover { background: linear-gradient(#aaf4a1, #329648 45%, #154e22); color: white; }
+.page-links { position: absolute; right: 18px; bottom: 9px; display: flex; gap: 14px; font-size: 12px; }
+.page-links a { color: #654719; }
+.page-links [aria-current="page"] { font-weight: bold; text-decoration-thickness: 2px; }
+.layout { display: grid; grid-template-columns: 212px minmax(0, 1fr); gap: 12px; padding: 0 18px 0 2px; align-items: start; background: url("../images/content-shadow.png") no-repeat right bottom; }
+.sidebar { min-width: 0; }
+.main-nav { padding: 6px; margin-bottom: 16px; border: 1px solid #bf913f; border-radius: 4px; background: #a77a36; box-shadow: inset 2px 2px 4px #745221, inset -2px -2px 3px #ead28a; }
+.main-nav ul { list-style: none; margin: 0; padding: 0; }
+.main-nav li + li { margin-top: 16px; }
+.main-nav a { display: block; background: #300302 radial-gradient(ellipse at center, #584130 0, #300302 64%); color: #fffefd; font: 28px/67px "PT Serif Caption", Georgia, serif; text-decoration: none; text-align: center; text-transform: uppercase; text-shadow: 0 4px 3px #160700; }
+.main-nav a:hover, .main-nav a[aria-current="page"] { background-color: #4b1108; box-shadow: inset 0 0 12px #945224; }
+.side-box { margin-bottom: 24px; padding-bottom: 6px; background: url("../images/box-shadow-bottom.png") no-repeat bottom right; background-size: 100% auto; }
+.side-box-inner { padding: 6px; background: #f4c26b; }
+.side-box h2 { margin: 0 0 12px; color: #5c3b10; background: #be841f; font-size: 20px; text-align: center; line-height: 40px; text-shadow: 1px 1px #dfa643; }
+.connect { background: #fef1bf; }
+.connect h2 { background: #f0c27e; color: #7b4c1a; text-shadow: 1px 1px #fdf2be; }
+.social-links { display: flex; justify-content: space-around; padding: 8px 4px 18px; }
+.social-icon { display: block; width: 23px; height: 19px; background: url("../images/icons.png") no-repeat; }
+.social-icon.facebook { background-position: -72px 0; width: 19px; }
+.social-icon.google { background-position: -141px 0; width: 22px; }
+.post-preview { margin: 0 6px 20px; font-size: 12px; line-height: 22px; }
+.post-preview h3 { font-size: 12px; color: #fff; font-weight: normal; margin: 0; }
+.post-preview p { color: #68460a; margin: 0 0 4px; }
+.view-more { display: block; margin: 0 6px 12px; padding: 3px; font-size: 24px; line-height: 30px; text-align: center; text-decoration: none; }
+.main-content { background: #fdf6ea; padding: 10px 40px 50px; min-width: 0; min-height: 990px; }
+h1 { margin: 0 0 26px; color: #7e501c; font-size: 30px; font-weight: normal; line-height: 1.45; text-shadow: 0 2px #fdf2be; }
+h2 { color: #211b13; font-size: 20px; line-height: 1.5; }
+p { margin: 0 0 26px; }
+.main-content p { text-align: justify; }
+.intro { margin-bottom: 28px; }
+.registration fieldset { border: 1px solid #a9a9a9; margin: 0 0 0; padding: 0 12px 30px; min-width: 0; }
+.registration legend { color: #19150e; font-size: 16px; padding: 0 2px; line-height: 1.35; }
+.form-field { margin-bottom: 28px; }
+.form-field:last-child { margin-bottom: 8px; }
+.form-field > label, .field-label { display: block; margin-bottom: 2px; }
+.registration input:not([type="radio"]):not([type="checkbox"]), .registration select, .registration textarea { display: block; border: 1px solid #999; border-radius: 2px; background: white; color: #333; padding: 1px 3px; font: 13px/1.3 Arial, sans-serif; }
+.registration input:not([type="radio"]):not([type="checkbox"]) { width: 178px; max-width: 100%; height: 22px; }
+.registration input[type="number"] { width: 74px !important; }
+.registration input[type="date"] { width: 140px !important; }
+.registration textarea { width: 315px; max-width: 100%; min-height: 68px; resize: vertical; }
+.registration select { max-width: 100%; }
+.choice-row { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 8px; margin-top: 22px; }
+.choice-row label, .terms-label { display: inline-flex; align-items: baseline; gap: 4px; }
+.choice-row input, .terms-label input { margin: 0; accent-color: #317329; }
+.registration .preference-field { margin-bottom: 32px; }
+.terms-label { margin: 8px 0 6px; }
+.form-actions { display: flex; gap: 5px; }
+.form-note { font-size: 12px; margin: 14px 0 0; }
+.form-status { border-left: 3px solid #317329; background: #eef3df; padding: 12px; margin: 16px 0 0; }
+.media-article .article-meta { font-size: 13px; margin-bottom: 34px; }
+.media-article .article-meta a { color: inherit; }
+.media-article h2 { text-align: center; margin: 18px 0 26px; }
+.media-article figure { margin: 0 32px 18px; }
+.media-article figure img { display: block; width: 100%; }
+.media-article figcaption { color: #27231a; font-size: 13px; line-height: 1.5; }
+.media-article video { display: block; width: 100%; aspect-ratio: 666 / 344; background: #292a25; object-fit: cover; }
+.media-article audio { display: block; width: 300px; max-width: 100%; }
+.media-article iframe { width: 100%; height: 300px; border: 1px solid #c7c1a4; display: block; }
+.media-note { font-size: 12px; margin: 8px 0 18px; }
+.transcript { font-size: 13px; margin-top: 12px; }
+.transcript summary { cursor: pointer; color: #397424; }
+.transcript p { margin: 8px 0 14px; }
+.tags { font-size: 13px; margin-top: 18px; }
+.home-hero { display: block; width: 100%; margin: 6px 0 14px; }
+.thumbnails { display: flex; justify-content: space-around; gap: 8px; background: #ebe0ce; padding: 8px; margin-bottom: 28px; }
+.thumbnails img { display: block; width: 78px; height: 48px; object-fit: cover; }
+.home-section { margin: 28px 0; }
+.home-section h2 { color: #7e501c; margin: 0 0 14px; }
+.home-section h3 { color: #493413; font-size: 17px; }
+.home-section p { margin-bottom: 16px; }
+.article-rule { border-top: 1px solid #d5c5a7; padding-top: 24px; }
+.site-footer { border-top: 1px solid #ffe6bc; padding: 40px 0 32px; }
+.footer-features { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 46px; list-style: none; padding: 0 18px; margin: 0 0 48px; }
+.footer-icon { display: block; height: 74px; width: 72px; margin: 0 auto 18px; background: url("../images/icons.png") no-repeat; }
+.footer-icon.home { background-position: -91px -27px; }
+.footer-icon.bell { background-position: -91px -112px; }
+.footer-icon.globe { background-position: -91px -196px; }
+.footer-icon.pencil { background-position: -91px -280px; }
+.footer-icon:hover { filter: brightness(1.13); }
+.footer-features p { margin: 0; color: #593e0f; font: 14px/24px "Times New Roman", serif; text-align: justify; }
+.footer-features p a { color: inherit; text-decoration: none; }
+.footnote { border-top: 6px solid #d6ae6a; padding: 30px 0; color: #7f612e; font: 10px "Trebuchet MS", Arial, sans-serif; text-align: center; }
+.skip-link { position: absolute; left: 8px; top: -80px; padding: 8px 16px; z-index: 5; background: #fdf6ea; }
+.skip-link:focus { top: 8px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.search-results { padding: 10px; border: 1px solid #bea477; margin-bottom: 20px; background: #fff6dc; }
+.search-results h2 { margin: 0 0 8px; font-size: 18px; }
+.search-results ul { margin: 0; padding-left: 22px; }
+.search-results p { margin: 0; }
+@media (max-width: 700px) {
+  .page-width { width: min(560px, calc(100% - 24px)); }
+  .site-header { height: 216px; }
+  .brand-logo { top: 14px; width: 150px; }
+  .sitename { top: 118px; width: 122px; }
+  .motto { top: 121px; right: 0; width: 185px; }
+  .search-form { top: 156px; left: 0; right: auto; }
+  .page-links { left: 0; right: 0; bottom: 6px; justify-content: space-between; gap: 5px; }
+  .layout { grid-template-columns: 1fr; padding: 0; gap: 0; }
+  .main-nav ul { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; }
+  .main-nav li + li { margin-top: 0; }
+  .main-nav a { font-size: 15px; line-height: 44px; }
+  .sidebar .side-box { display: none; }
+  .main-content { padding: 20px 18px 36px; min-height: 0; }
+  h1 { font-size: 26px; }
+  .media-article figure { margin-inline: 0; }
+  .footer-features { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; padding: 0 8px; }
+  .thumbnails img { width: 100%; height: auto; }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
