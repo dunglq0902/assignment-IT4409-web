@@ -65,4 +65,8 @@ Xem [CREDITS.md](CREDITS.md) cho nguồn và ghi công giao diện/font/media.
 giữ nguyên HTML và ảnh trong đề, chỉ chỉnh CSS. Xem
 [báo cáo và nội dung nộp bài](css-bai-tap/BAO_CAO_BAI_2.md) cùng
 [prompt sửa lỗi bằng AI](css-bai-tap/PROMPT_BAI_2.md).
-Bài tập 1 dành cho người học tự thực hiện theo yêu cầu không dùng AI.
+
+[Bài tập 1 trên host cá nhân](http://www.dunglq09.id.vn/css-bai-tap/bai-1/trang.html)
+và [báo cáo chẩn đoán](css-bai-tap/BAO_CAO_BAI_1.md) được bổ sung theo yêu cầu
+của người dùng, cũng giữ nguyên HTML và ảnh. Bản sửa này có AI hỗ trợ;
+đề gốc yêu cầu Bài tập 1 tự làm không dùng AI.

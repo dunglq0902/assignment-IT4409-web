@@ -139,7 +139,8 @@ Minh chứng: [trước sửa](minh-chung/truoc-sua-1280.png),
   giữ nguyên theo ràng buộc không thay HTML.
 - Comment của CSS gốc nhắc tới `de-bai.md`, nhưng ZIP không chứa file này.
   Bài làm dựa trên yêu cầu đã cung cấp và các tệp thực tế trong ZIP.
-- Bài tập 1 yêu cầu tự làm không dùng AI nên chưa có lời giải hoặc bản sửa
-  do AI tạo. Bộ nguồn gốc được giữ riêng trên máy để người học tự thực hiện.
+- Bài tập 1 được bổ sung theo yêu cầu tiếp theo của người dùng; xem
+  [báo cáo Bài tập 1](BAO_CAO_BAI_1.md). Bản sửa đó có AI hỗ trợ, trong khi
+  đề gốc yêu cầu tự làm không dùng AI.
 - Chưa có file mẫu nộp bài kèm theo yêu cầu. Báo cáo và prompt này cung cấp
   nội dung để điền vào mẫu khi có, không phải mẫu chính thức của giảng viên.
