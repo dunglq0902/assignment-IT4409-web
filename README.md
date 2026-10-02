@@ -61,10 +61,6 @@ Xem [CREDITS.md](CREDITS.md) cho nguồn và ghi công giao diện/font/media.
 
 ## Bài tập sửa lỗi CSS — hạn 04/10/2026
 
-Hai trang hiện có [hai giao diện riêng](css-bai-tap/GIAO_DIEN_MOI.md):
-Bài 1 dùng giấy kem/đỏ son và chữ serif; Bài 2 dùng xanh đậm/vàng và chữ sans-serif.
-Các yêu cầu chức năng CSS vẫn được giữ, HTML và ảnh gốc không thay đổi.
-
 [Bài tập 2 trên host cá nhân](http://www.dunglq09.id.vn/css-bai-tap/bai-2/trang.html)
 giữ nguyên HTML và ảnh trong đề, chỉ chỉnh CSS. Xem
 [báo cáo và nội dung nộp bài](css-bai-tap/BAO_CAO_BAI_2.md) cùng
