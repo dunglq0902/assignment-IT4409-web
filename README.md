@@ -58,3 +58,11 @@ chọn dùng khung trong ảnh đề bài; bản refactor giữ nguyên trang ch
 Trang Hello World cũ vẫn có trong lịch sử Git (`b80651f`).
 
 Xem [CREDITS.md](CREDITS.md) cho nguồn và ghi công giao diện/font/media.
+
+## Bài tập sửa lỗi CSS — hạn 04/10/2026
+
+[Bài tập 2 trên host cá nhân](http://www.dunglq09.id.vn/css-bai-tap/bai-2/trang.html)
+giữ nguyên HTML và ảnh trong đề, chỉ chỉnh CSS. Xem
+[báo cáo và nội dung nộp bài](css-bai-tap/BAO_CAO_BAI_2.md) cùng
+[prompt sửa lỗi bằng AI](css-bai-tap/PROMPT_BAI_2.md).
+Bài tập 1 dành cho người học tự thực hiện theo yêu cầu không dùng AI.
