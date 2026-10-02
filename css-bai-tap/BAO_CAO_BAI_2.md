@@ -1,5 +1,9 @@
 # Bài tập 2 — Tìm và sửa lỗi CSS bằng AI
 
+> Cập nhật: website hiện dùng [giao diện riêng mới](GIAO_DIEN_MOI.md) theo yêu cầu
+> tiếp theo. Phần phân tích, số đo và ảnh minh chứng bên dưới ghi nhận bản sửa
+> lỗi ban đầu; CSS và ZIP được liên kết đã cập nhật sang thiết kế mới.
+
 Ngày thực hiện: 02/10/2026. Hạn nộp: hết ngày 04/10/2026.
 
 ## Link và tệp nộp bài

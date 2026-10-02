@@ -1,203 +1,179 @@
-/* =====================================================================
-   Blakletterpress — Trang khuyến mãi thiệp Tết 2026
-   HOẠT ĐỘNG 1 — Bản sửa CSS có AI hỗ trợ theo yêu cầu của người dùng.
-   Giữ nguyên HTML và ảnh gốc. Chẩn đoán: ../BAO_CAO_BAI_1.md.
-   ===================================================================== */
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+/* Bài 1 — Thiệp Tết: giấy kem, đỏ son và typography serif.
+   Chỉ thay CSS; HTML và ảnh giữ nguyên. Xem ../GIAO_DIEN_MOI.md. */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+*::before, *::after { box-sizing: border-box; }
+:root {
+  --paper: #f6efe2;
+  --ink: #422b25;
+  --red: #922e2b;
+  --gold: #b68a4c;
+  --line: #d8c8ae;
+  --card-gap: 24px;
 }
-
 body {
-	font-family: "Segoe UI", Arial, sans-serif;
-	color: #222;
-	background: #f4f1ea;
-	line-height: 1.5;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  background-image: repeating-linear-gradient(90deg, transparent 0 79px, #a9824b07 79px 80px);
+  line-height: 1.65;
 }
-
-a {
-	color: inherit;
-}
-
-/* ===== Header / thanh điều hướng ===== */
+a { color: inherit; }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 5px; }
 .site-header {
-	background: #2b2b2b;
-	position: sticky;
-	top: 0;
-	z-index: 100;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #f6efe2;
+  border-bottom: 1px solid var(--line);
 }
-
 .header-inner {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 16px 24px;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 12px 24px;
-	align-items: center;
-	justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 19px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .brand {
-	color: #fff;
-	font-size: 24px;
-	font-weight: bold;
-	text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 29px;
+  font-weight: 700;
+  color: var(--red);
+  text-decoration: none;
+  letter-spacing: -1px;
 }
-
-.main-nav ul {
-	list-style: none;
-	display: flex;
-	gap: 24px;
-}
-
-.main-nav a {
-	color: #ddd;
-	text-decoration: none;
-}
-
-.main-nav a:hover {
-	color: #fff;
-}
-
-/* ===== Hero ===== */
+.main-nav ul { list-style: none; display: flex; gap: 32px; }
+.main-nav a { text-decoration: none; font-size: 14px; font-weight: 600; }
+.main-nav a:hover { color: var(--red); text-decoration: underline; text-underline-offset: 6px; }
 .hero {
-	position: relative;
-	height: 360px;
-	overflow: hidden;
+  position: relative;
+  height: 460px;
+  max-width: 1200px;
+  width: calc(100% - 48px);
+  margin: 24px auto 0;
+  overflow: hidden;
+  background: #572d24;
 }
-
-.hero-bg {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.hero-bg { display: block; width: 100%; height: 100%; object-fit: cover; filter: sepia(.55) saturate(.65); }
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #391810ad, #421d1770, #391810ad);
+  pointer-events: none;
 }
-
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  z-index: 2;
+  border: 1px solid #ead5a98c;
+  outline: 1px solid #ead5a950;
+  outline-offset: -5px;
+  pointer-events: none;
+}
 .hero-overlay {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 80%;
-	max-width: 560px;
-	text-align: center;
-	color: #fff;
-	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-	z-index: 5;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: calc(100% - 64px);
+  max-width: 800px;
+  color: #fff9ec;
+  text-align: center;
 }
-
 .hero-overlay h1 {
-	font-size: 34px;
-	margin-bottom: 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 5.2vw, 64px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+  text-wrap: balance;
 }
-
-.hero-overlay p {
-	font-size: 18px;
-	margin-bottom: 20px;
-}
-
+.hero-overlay p { max-width: 510px; margin: 0 auto 28px; font-size: 17px; line-height: 1.7; }
 .hero-btn {
-	display: inline-block;
-	padding: 12px 28px;
-	background: #c0392b;
-	color: #fff;
-	text-decoration: none;
-	border-radius: 4px;
+  display: inline-block;
+  padding: 13px 30px;
+  background: var(--red);
+  border: 1px solid #e5bb80;
+  box-shadow: 0 0 0 4px #922e2b;
+  color: #fff9ec;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .5px;
 }
-
-/* ===== Khu sản phẩm ===== */
-.products {
-	max-width: 1000px;
-	margin: 48px auto;
-	padding: 0 24px;
-}
-
+.hero-btn:hover { background: #6f201e; }
+.products { max-width: 1160px; margin: 48px auto; padding: 0 24px; }
 .products h2 {
-	margin-bottom: 24px;
-	font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 32px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(25px, 3vw, 38px);
+  font-weight: 400;
+  color: var(--red);
+  text-align: center;
 }
-
-.card-list {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 24px;
-}
-
+.products h2::before, .products h2::after { content: ""; width: 80px; height: 1px; background: var(--gold); }
+.card-list { display: flex; flex-wrap: wrap; gap: var(--card-gap); }
 .card {
-	flex: 0 0 calc((100% - 48px) / 3);
-	min-width: 0;
-	min-height: 300px;
-	overflow-wrap: anywhere;
-	position: relative;
-	background: #fff;
-	border: 1px solid #e0d8c8;
-	border-radius: 8px;
-	padding: 16px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  flex: 0 0 calc((100% - 2 * var(--card-gap)) / 3);
+  min-width: 0;
+  min-height: 300px;
+  position: relative;
+  overflow-wrap: anywhere;
+  display: flex;
+  flex-direction: column;
+  background: #fffaf0;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 20px;
+  box-shadow: 5px 5px 0 #e7dac3;
 }
-
 .badge {
-	position: absolute;
-	z-index: 1;
-	top: 12px;
-	right: 12px;
-	background: #c0392b;
-	color: #fff;
-	font-size: 14px;
-	font-weight: bold;
-	padding: 4px 10px;
-	border-radius: 20px;
+  position: absolute;
+  z-index: 3;
+  top: 12px; right: 12px;
+  padding: 6px 10px;
+  border: 1px solid #e5bb80;
+  background: var(--red);
+  color: #fff9ec;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
 }
-
-.card img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-.card-body h3 {
-	margin: 12px 0 8px;
-	font-size: 20px;
-}
-
-.card-body p {
-	margin-bottom: 8px;
-	font-size: 15px;
-	color: #555;
-}
-
-.card-body .price {
-	color: #c0392b;
-	font-weight: bold;
-	font-size: 18px;
-}
-
-/* ===== Nút lên đầu trang ===== */
-.back-to-top {
-	position: fixed;
-	bottom: 24px;
-	right: 24px;
-	z-index: 200;
-	width: 48px;
-	height: 48px;
-	background: #2b2b2b;
-	color: #fff;
-	text-align: center;
-	line-height: 48px;
-	font-size: 22px;
-	text-decoration: none;
-	border-radius: 50%;
-}
-
-/* ===== Footer ===== */
-.site-footer {
-	margin-top: 48px;
-	padding: 32px 24px;
-	background: #2b2b2b;
-	color: #cfcfcf;
-	text-align: center;
-	font-size: 14px;
+.card img { display: block; width: 100%; height: clamp(100px, 18vw, 210px); object-fit: cover; border-radius: 48% 48% 0 0; filter: sepia(.25) saturate(.75); }
+.card-body { display: flex; flex-direction: column; flex: 1; padding-top: 20px; }
+.card-body h3 { margin-bottom: 14px; font-family: Georgia, "Times New Roman", serif; font-size: 25px; font-weight: 400; line-height: 1.3; color: var(--red); }
+.card-body p { margin-bottom: 12px; font-size: 14px; color: #705a50; }
+.card-body .price { margin-top: auto; margin-bottom: 0; padding-top: 16px; border-top: 1px solid var(--line); font-family: Georgia, "Times New Roman", serif; font-size: 23px; color: var(--red); font-weight: 700; }
+.back-to-top { position: fixed; bottom: 24px; right: 24px; z-index: 200; width: 48px; height: 48px; line-height: 44px; text-align: center; text-decoration: none; font-size: 23px; background: var(--red); color: #fff9ec; border: 2px solid var(--gold); box-shadow: 0 4px 12px #422b2526; }
+.site-footer { margin-top: 64px; padding: 38px 24px; background: var(--red); border-top: 4px double #d9b678; color: #f5e7d1; text-align: center; font-size: 13px; line-height: 1.9; }
+@media (max-width: 600px) {
+  :root { --card-gap: 10px; }
+  .header-inner { padding: 13px 16px; justify-content: center; gap: 5px; }
+  .brand { font-size: 27px; }
+  .main-nav { width: 100%; }
+  .main-nav ul { justify-content: center; gap: 22px; }
+  .main-nav a { font-size: 12px; }
+  .hero { width: calc(100% - 24px); margin-top: 12px; height: 420px; }
+  .hero-overlay { width: calc(100% - 48px); }
+  .hero-overlay h1 { letter-spacing: -.7px; }
+  .hero-overlay p { font-size: 14px; margin-bottom: 24px; }
+  .hero-btn { padding: 11px 16px; font-size: 12px; }
+  .products { padding: 0 12px; }
+  .products h2 { gap: 10px; margin-bottom: 24px; }
+  .products h2::before, .products h2::after { width: 20px; }
+  .card { padding: 8px; box-shadow: 2px 3px 0 #e7dac3; }
+  .card-body { padding-top: 14px; }
+  .card-body h3 { font-size: 18px; margin-bottom: 10px; }
+  .card-body p { font-size: 12px; line-height: 1.6; }
+  .card-body .price { font-size: 16px; padding-top: 12px; }
+  .badge { top: 8px; right: 8px; padding: 4px 6px; font-size: 11px; }
 }

@@ -48,3 +48,21 @@ Bảo vệ các đoạn đang đúng và giải thích vì sao giữ:
 
 Không thực hiện lời giải Bài tập 1 vì bài đó yêu cầu tự làm không dùng AI.
 ```
+
+## Yêu cầu bổ sung sau khi sửa lỗi
+
+Sau prompt ban đầu, người dùng yêu cầu thực hiện cả Bài tập 1 và làm hai
+giao diện khác nhau rõ ràng. Chỉ dẫn bổ sung được áp dụng:
+
+```text
+Thiết kế lại CSS của cả hai trang, giữ nguyên HTML và các tệp ảnh.
+Bài 1 theo phong cách giấy kem, đỏ son, chữ serif, hero có khung viền và
+thẻ sản phẩm như giấy in. Bài 2 theo phong cách hiện đại với nền xanh đậm,
+điểm nhấn vàng, chữ sans-serif đậm, hero tràn ngang và thẻ bo góc.
+Làm khác nhau về typography, bố cục, card, badge, nút và footer, đồng thời
+giữ các yêu cầu sticky, hero phủ kín và tiêu đề căn giữa, ba card cùng hàng,
+badge đúng góc từng card và nút lên đầu trang fixed ở góc dưới bên phải.
+Kiểm tra desktop và màn hình hẹp, cập nhật ZIP và triển khai lên host cũ.
+```
+
+Kết quả hiện tại và kiểm thử: [GIAO_DIEN_MOI.md](GIAO_DIEN_MOI.md).
