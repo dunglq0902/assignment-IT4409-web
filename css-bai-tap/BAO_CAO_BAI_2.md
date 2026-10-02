@@ -94,6 +94,8 @@ cột khá hẹp và nội dung phải xuống nhiều dòng; không đổi sang
 ## 4. Kết quả kiểm thử
 
 Kiểm tra bằng Chrome 154.0.8037.58, viewport cao 600px, qua HTTP trên máy.
+Sau khi triển khai GitHub Pages, chạy lại toàn bộ kiểm tra trên
+`http://www.dunglq09.id.vn/css-bai-tap/bai-2/trang.html` và đạt cùng kết quả.
 Đo tọa độ, computed styles, vùng chữ bằng DOM Range và lớp hiển thị bằng
 `elementFromPoint`; kiểm tra thêm ảnh chụp. Thử cuộn 150px, 250px và tới
 cuối tài liệu; nhấn nút `↑` đưa trang về đầu.
