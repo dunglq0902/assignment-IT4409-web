@@ -70,3 +70,16 @@ giữ nguyên HTML và ảnh trong đề, chỉ chỉnh CSS. Xem
 và [báo cáo chẩn đoán](css-bai-tap/BAO_CAO_BAI_1.md) được bổ sung theo yêu cầu
 của người dùng, cũng giữ nguyên HTML và ảnh. Bản sửa này có AI hỗ trợ;
 đề gốc yêu cầu Bài tập 1 tự làm không dùng AI.
+
+## Bài tập 4 — Xây dựng CSS responsive
+
+[Xem Bài tập 4 trên tên miền cá nhân](http://www.dunglq09.id.vn/css-bai-tap/bai-4/trang-goc.html).
+
+[Mở trang Bài tập 4](css-bai-tap/bai-4/trang-goc.html),
+[hướng dẫn và kết quả kiểm tra](css-bai-tap/bai-4/README.md),
+[bản ZIP để nộp bài](css-bai-tap/bai-4-responsive.zip).
+
+Bài làm giữ nguyên HTML và toàn bộ ảnh trong đề, chỉ bổ sung CSS thuần.
+Bố cục tự điều chỉnh cho desktop, tablet và điện thoại; đã kiểm tra từ
+320px đến 1920px. Chạy bằng `npm start`, sau đó mở
+http://127.0.0.1:4173/css-bai-tap/bai-4/trang-goc.html.
