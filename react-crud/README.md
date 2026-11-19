@@ -3,8 +3,10 @@
 Ứng dụng quản lý người dùng theo tài liệu **Ex. React-CRUD - 20261.pdf**.
 
 - [Ứng dụng trên tên miền cá nhân](http://www.dunglq09.id.vn/react-crud/)
-- [Báo cáo Google Docs](https://docs.google.com/document/d/18DjCvSjpmtUTgUeoKwHYX_BQG-J3O3UpCUlLcGm_uDA/edit)
 - [Thông tin nộp bài](NOP_BAI.md)
+
+Báo cáo Word độc lập (`.docx`) được bàn giao riêng để người làm bài tự tải lên
+và điền link nộp bài. Toàn bộ sơ đồ và ảnh minh họa được nhúng trong file.
 
 ## Chức năng
 
